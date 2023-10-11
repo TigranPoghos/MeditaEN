@@ -1,0 +1,165 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "HelveticaNeueCyr";
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.button {
+  border-radius: 63px;
+  background: #1EE2C6;
+  padding: 18px 34px;
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: 60px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 241px;
+  flex-shrink: 0;
+  height: 68px;
+  margin-right: 81px;
+}
+.logo__image {
+  max-width: 100%;
+  max-height: 68px;
+  height: auto;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal.js-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header {
+  flex: 0 0 auto;
+  background: linear-gradient(180deg, #1A3140 0%, #1A3140 83.33%, rgba(26, 51, 64, 0) 100%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+.header__row {
+  padding-top: 42px;
+  padding-bottom: 66px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__ul {
+  display: flex;
+  gap: 35px;
+  margin-right: auto;
+}
+.header__ul-item a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header__buttons {
+  display: flex;
+  gap: 82px;
+  align-items: center;
+}
+.header__buttons-item {
+  border-radius: 63px;
+  background: #1EE2C6;
+  padding: 18px 34px;
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: 60px;
+}
+.header__buttons-item span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 88px;
+}
+.header__buttons-href {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 75px;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(90deg, rgba(37, 221, 201, 0.55) 0%, rgba(190, 93, 243, 0.72) 100%);
+  height: 1000px;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(180deg);
+}
